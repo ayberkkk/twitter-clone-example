@@ -8,6 +8,7 @@ import Lists from "../pages/lists";
 import Bookmark from "../pages/bookmarks";
 import Communities from "../pages/communities";
 import Profile from "../pages/profile";
+import NotFound from "../pages/not-found";
 
 const routes = createBrowserRouter([
   {
@@ -47,8 +48,12 @@ const routes = createBrowserRouter([
         element: <Communities />,
       },
       {
-        path: "profile",
+        path: "/:slug",
         element: <Profile />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
       },
     ],
   },
