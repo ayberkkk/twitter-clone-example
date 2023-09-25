@@ -20,7 +20,7 @@ export default function Search() {
           <svg
             viewBox="0 0 24 24"
             height={18.75}
-            className="min-w-[32px] text-[#16181c] group-focus-within:text-[#1d9bf0]"
+            className="min-w-[32px] text-[#3c3d3f] group-focus-within:text-[#1d9bf0]"
           >
             <path
               fill="currentColor"
