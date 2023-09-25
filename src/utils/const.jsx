@@ -181,3 +181,82 @@ export const mainMenu = [
     },
   },
 ];
+
+export const topics = [
+  {
+    title: "Trending in Turkey",
+    topic: {
+      type: "tag",
+      value: "Galatasaray",
+    },
+  },
+  {
+    title: "Trending in Turkey",
+    topic: {
+      type: "query",
+      value: "starlink",
+    },
+    postCount: 13455,
+  },
+  {
+    title: "Trending in Turkey",
+    topic: {
+      type: "tag",
+      value: "Galatasaray",
+    },
+  },
+  {
+    title: "Trending in Turkey",
+    topic: {
+      type: "query",
+      value: "starlink",
+    },
+    postCount: 13455,
+  },
+  {
+    title: "Trending in Turkey",
+    topic: {
+      type: "tag",
+      value: "Galatasaray",
+    },
+  },
+  {
+    title: "Trending in Turkey",
+    topic: {
+      type: "query",
+      value: "starlink",
+    },
+    postCount: 400,
+  },
+  {
+    title: "Trending in Turkey",
+    topic: {
+      type: "tag",
+      value: "Galatasaray",
+    },
+  },
+  {
+    title: "Trending in Turkey",
+    topic: {
+      type: "query",
+      value: "starlink",
+    },
+    postCount: 1,
+  },
+  {
+    title: "Trending in Turkey",
+    topic: {
+      type: "query",
+      value: "starlink",
+    },
+    postCount: 1,
+  },
+  {
+    title: "Trending in Turkey",
+    topic: {
+      type: "query",
+      value: "starlink",
+    },
+    postCount: 1,
+  },
+];
