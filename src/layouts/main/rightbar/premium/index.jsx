@@ -2,14 +2,14 @@ import Button from "../../../../components/buttons";
 
 export default function Premium() {
   return (
-    <section className="bg-[#16181c] mb-4 rounded-2xl border border-[#16181c] py-3 px-4 flex flex-col gap-2.5">
-      <h6 className="text-xl leading-6 font-extrabold">Subscribe to Premium</h6>
+    <section className="bg-[color:var(--background-secondary)] mb-4 rounded-2xl border border-[color:var(--background-secondary)] py-3 px-4 flex flex-col gap-2.5">
+      <h6 className="text-xl leading-6 font-extrabold">Premium'a Abone Ol</h6>
       <p className="leading-5 text-[15px] font-bold">
-        Subscribe to unlock new features and if eligible, receive a share of ads
-        revenue.
+        Yeni özellikleri açmak için abone ol ve uygun olman durumunda reklam
+        geliri payı kazan.
       </p>
       <div className="self-start">
-        <Button>Subscribe</Button>
+        <Button>Abone ol</Button>
       </div>
     </section>
   );
