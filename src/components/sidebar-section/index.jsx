@@ -10,7 +10,7 @@ export default function SidebarSection({ title, children, more }) {
       <div className="grid">{children}</div>
       {more && (
         <Link
-          className="h-[52px] flex rounded-b-2xl items-center px-4 text-[15px] text-[color:var(--color-primary)] transition-colors hover:bg-white/[0.03]"
+          className="h-[3.25rem] flex rounded-b-2xl items-center px-4 text-[color:var(--color-primary)] transition-colors hover:bg-white/[0.03]"
           href={more}
         >
           Show More

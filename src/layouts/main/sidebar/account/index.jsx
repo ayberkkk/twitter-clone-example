@@ -9,15 +9,16 @@ export default function Account() {
     <div className="mt-auto">
       <Popover className="relative">
         <Popover.Button className="my-3 p-3 rounded-full hover:[color:var(--background-third)] w-full flex text-left items-center outline-none transition-colors">
-          <img src={account.avatar} className="w-10 h-10 rounded-full" alt="" />
-          <div className="mx-3 text-[15px]">
-            <h6 className="font-bold leading-[20px]">{account.fullName}</h6>
-            <div className="text-[color:var(--color-base-secondary)]">@{account.username}</div>
+          <img src={account.avatar} className="w-10 h-10 flex-shrink-0 rounded-full" alt="" />
+          <div className="mx-3">
+            <h6 className="font-bold leading-[1.25rem]">{account.fullName}</h6>
+            <div className="text-[color:var(--color-base-secondary)]">
+              @{account.username}
+            </div>
           </div>
           <svg
             viewBox="0 0 24 24"
-            className="ml-auto"
-            width={18.75}
+            className="ml-auto h-[1.172rem]"
           >
             <path
               fill="currentColor"
