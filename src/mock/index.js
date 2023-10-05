@@ -16,6 +16,6 @@ export const whoFollowUsers = [
     username: "john_doe_live_3",
     fullName: "John Live",
     avatar: "https://vitejs.dev/logo.svg",
-    verified:true,
+    verified: true,
   },
 ];
