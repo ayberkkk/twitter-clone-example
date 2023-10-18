@@ -1,8 +1,9 @@
 import { numberFormat } from "../../utils/format";
-
+import Photo from "./photo";
+import Poll from "./poll";
 export default function Post({ post }) {
   return (
-    <div className="relative -z-[1] px-4 py-3 gap-3 border-b border-[color:var(--background-third)] flex before:absolute before:z-[-1] before:transition-colors before:opacity-50 before:inset-0 before:hover:bg-[color:var(--background-secondary)]">
+    <div className="relative px-4 py-3 gap-3 border-b border-[color:var(--background-third)] flex before:absolute before:z-[-1] before:transition-colors before:opacity-50 before:inset-0 before:hover:bg-[color:var(--background-secondary)]">
       <img
         src={post.account.avatar}
         className="w-10 h-10 rounded-full object-cover"
@@ -36,7 +37,8 @@ export default function Post({ post }) {
               __html: post.content.replace(/\n/g, "<br>"),
             }}
           />
-
+          {post.type === "photo" && <Photo  photos={post.photos}/>}
+          {post.type === 'poll' && <Poll poll={post.poll} />}
           <div className="flex -ml-1.5 mt-1.5">
             <div className="flex-1 group flex items-center gap-px">
               <div className="w-[2.172rem] h-[2.172rem] transition-colors flex items-center justify-center text-[color:var(--color-base-secondary)] group-hover:bg-[#1d9bf01a] rounded-full group-hover:text-[#1d9bf0]">
@@ -51,7 +53,6 @@ export default function Post({ post }) {
                 {numberFormat(post.stats.comments)}
               </span>
             </div>
-
             <div className="flex-1 group flex items-center gap-px">
               <div className="w-[2.172rem] h-[2.172rem] transition-colors flex items-center justify-center text-[color:var(--color-base-secondary)] group-hover:bg-[#00ba7c1a] rounded-full group-hover:text-[#00ba7c]">
                 <svg viewBox="0 0 24 24" className="h-[1.172rem]">
@@ -65,7 +66,6 @@ export default function Post({ post }) {
                 {numberFormat(post.stats.repost)}
               </span>
             </div>
-
             <div className="flex-1 group flex items-center gap-px">
               <div className="w-[2.172rem] h-[2.172rem] transition-colors flex items-center justify-center text-[color:var(--color-base-secondary)] group-hover:bg-[#f918801a] rounded-full group-hover:text-[#f91880]">
                 <svg viewBox="0 0 24 24" className="h-[1.172rem]">
@@ -79,7 +79,6 @@ export default function Post({ post }) {
                 {numberFormat(post.stats.like)}
               </span>
             </div>
-
             <div className="flex-1 group flex items-center gap-px">
               <div className="w-[2.172rem] h-[2.172rem] transition-colors flex items-center justify-center text-[color:var(--color-base-secondary)] group-hover:bg-[#1d9bf01a] rounded-full group-hover:text-[#1d9bf0]">
                 <svg viewBox="0 0 24 24" className="h-[1.172rem]">
@@ -93,7 +92,6 @@ export default function Post({ post }) {
                 {numberFormat(post.stats.view)}
               </span>
             </div>
-
             <div className="w-[2.172rem] h-[2.172rem] transition-colors flex items-center justify-center text-[color:var(--color-base-secondary)] hover:bg-[#1d9bf01a] rounded-full hover:text-[#1d9bf0]">
               <svg viewBox="0 0 24 24" className="h-[1.172rem]">
                 <path
